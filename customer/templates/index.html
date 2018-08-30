@@ -1,0 +1,206 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>TAJ group of online event management</title>
+    <link rel="stylesheet" href={% static 'css/components.css' %}>
+    <link rel="stylesheet" href={% static 'css/icons.css' %}>
+    <link rel="stylesheet" href={% static 'css/responsee.css' %}>
+    <link rel="stylesheet" href={% static 'owl-carousel/owl.carousel.css' %}>
+    <link rel="stylesheet" href={% static 'owl-carousel/owl.theme.css' %}>
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href={% static 'css/template-style.css' %}>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+    <script type="text/javascript" src="js/validation.js"></script> 
+  </head>  
+  
+  <body class="size-1140">
+  	<!-- PREMIUM FEATURES BUTTON -->
+  	<a target="_blank" class="hide-s" href="../template/prospera-premium-responsive-business-template/" style="position:fixed;top:120px;right:-14px;z-index:10;"><img src={% static 'img/premium-features.png" alt=""></a>
+    <!-- HEADER -->
+    <header role="banner">    
+      <!-- Top Bar -->
+      <div class="top-bar background-white">
+        <div class="line">
+          <div class="s-12 m-6 l-6">
+            <div class="top-bar-contact">
+               <p class="text-size-12">Contact Us: 9496127052 |tajevents@gmail.com</a></p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <!-- Top Navigation -->
+<nav class="background-white background-primary-hightlight">
+        <div class="line">
+          <div class="s-12 l-2">
+            <a href="index.html" class="logo"><img src={% static '/logo-free.png' %} alt=""></a>
+          </div>
+          <div class="top-nav s-12 l-10">
+            <p class="nav-text"></p>
+            <ul class="right chevron">
+              <li><a href={% url 'index' %}>Home</a></li>
+              <li><a href={% url 'abt' %}>About</a></li>
+              <li><a href="#">Events</a>
+                <ul>
+                     <li><a href={% url 'wed' %}>Wedding</a>
+                      <li><a href={% url 'photo' %}>photography</a></li>
+                      <li><a href={% url 'video' %}>videography</a></li> 
+                      <li><a href={% url 'decor' %}>Decoration</a></li>
+                </ul>
+              </li>
+           
+              <li><a href={% url 'book_event' %}>Booking</a></li>
+              <li><a href={% url 'contact' %}>Contact</a></li>
+              <li><a href={% url 'logout' %}>Logout</a></li>
+            
+        
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    
+    <!-- MAIN -->
+    <main role="main">
+      <!-- Main Carousel -->
+      <section class="section background-dark">
+        <div class="line">
+        <p style="font-size: 48px">TAJ GROUP OF ONLINE EVENT MANAGEMENT</p>
+        
+          <div class="carousel-fade-transition owl-carousel carousel-main carousel-nav-white carousel-wide-arrows">
+            <div class="item">
+              <div class="s-12 center">
+                <img src={% static 'img/01-boxed.jpg' %} >
+                <div class="carousel-content">
+                  <div class="padding-2x">
+                    <div class="s-12 m-12 l-8">
+                      <p class="text-white text-s-size-20 text-m-size-40 text-l-size-60 margin-bottom-40 text-thin text-line-height-1">Prospera is the New Amazing HTML5 Template</p>
+                      <p class="text-white text-size-16 margin-bottom-40">Duis autem vel eum iriure dolor in hendrerit in vulputate velit<br> esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>  
+                    </div>                  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="s-12 center">
+                <img src={% static 'img/01-boxed.jpg' %}  alt="">
+                <div class="carousel-content">
+                  <div class="padding-2x">
+                    <div class="s-12 m-12 l-8">
+                      <p class="text-white text-s-size-20 text-m-size-40 text-l-size-60 margin-bottom-40 text-thin text-line-height-1">With Fully Responsive Components</p>
+                      <p class="text-white text-size-16 margin-bottom-30">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>    
+                    </div>                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </section>
+      
+      <!-- Section 1 -->
+      <section class="section background-white"> 
+        <div class="line">
+          <div class="margin">
+            <div class="s-12 m-12 l-4 margin-m-bottom">
+              <img class="margin-bottom" src={% static 'img/teee.jpg' %} alt="" style="height: 200px; width: 350px;" />
+              <h2 class="text-thin">wedding</h2>
+              <p>Your wedding day is an event you’ll never want to forget.Enjoy your moments with us.</p> 
+              <a class="text-more-info text-primary-hover" href={% url 'wed' %}>more</a>                
+            </div>
+            <div class="s-12 m-12 l-4 margin-m-bottom">
+              <img class="margin-bottom" src={% static 'img/dec.jpg' %} alt="" style="height: 200px; width: 350px;" />
+              <h2 class="text-thin">decoration</h2>
+              <p>Decoration is really about creating a quality of life, and a beauty in that life that nourishes the soul, that makes life beautiful.</p> 
+              <a class="text-more-info text-primary-hover" href={% url 'decor' %}>more</a>                
+            </div>
+            <div class="s-12 m-12 l-4 margin-m-bottom">
+              <img class="margin-bottom" src={% static 'img/photo.JPG' %} alt="" style="height: 200px; width: 350px;" />
+              <h2 class="text-thin">photo&videography</h2>
+              <p>We are making photographs to understand what our lives mean to us.</p> 
+              <a class="text-more-info text-primary-hover" href={% url 'photo' %}>more</a>                
+            </div>
+          </div>
+        </div>
+      </section>
+      
+     
+    
+    <!-- FOOTER -->
+     <footer>
+      <!-- Main Footer -->
+      <section class="section background-dark">
+        <div class="line">
+          <div class="margin">
+            <!-- Collumn 1 -->
+            <div class="s-12 m-12 l-4 margin-m-bottom-2x">
+              <h4 class="text-uppercase text-strong">Our Philosophy</h4>
+              <p class="text-size-20"><em>Extend TAJ Events into new markets while advancing and extending our field of administration. To look after development, the coordinated effort and the exertion of all the members of the team alongwith the support of our clients. </em><p>
+                            
+             
+            </div>
+            
+            <!-- Collumn 2 -->
+            <div class="s-12 m-12 l-4 margin-m-bottom-2x">
+              <h4 class="text-uppercase text-strong">Contact Us</h4>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-placepin text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11 margin-bottom-10">
+                  <p><b>Adress:</b>iritty, kannur, Kerala</p>
+                </div>
+              </div>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-mail text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11 margin-bottom-10">
+                  <p><b>E-mail:</b> tajevents@gmail.com</p>
+                </div>
+              </div>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-smartphone text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11 margin-bottom-10">
+                  <p><b>Phone:</b> 9496127052</p>
+                </div>
+              </div>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-twitter text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11 margin-bottom-10">
+                  <p><b>Twitter</b></p>
+                </div>
+              </div>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-facebook text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11">
+                  <p><b>Facebook</b></p>
+                </div>
+              </div>
+            </div>
+           
+      </section>
+      <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
+      
+   
+    </footer>
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/template-scripts.js"></script>
+     
+   </body>
+</html>

@@ -1,0 +1,176 @@
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>TAJ group of online event management</title>
+    <link rel="stylesheet" href={% static 'css/components.css' %}>
+    <link rel="stylesheet" href={% static 'css/icons.css' %}>
+    <link rel="stylesheet" href={% static 'css/responsee.css' %}>
+    <link rel="stylesheet" href={% static 'owl-carousel/owl.carousel.css' %}>
+    <link rel="stylesheet" href={% static 'owl-carousel/owl.theme.css' %}>
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href={% static 'css/template-style.css' %}>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+    <script type="text/javascript" src="js/validation.js"></script> 
+  </head>   
+  
+  <body class="size-1140">
+  	<!-- PREMIUM FEATURES BUTTON -->
+  	  
+      <!-- Top Bar -->
+     <!--  <div class="top-bar background-white">
+        <div class="line">
+          <div class="s-12 m-6 l-6">
+            <div class="top-bar-contact">
+             <p class="text-size-12">Contact Us: 9496127052 |suryaevents@gmail.com</a></p>
+            </div>
+          </div>
+          
+        </div>
+      </d -->
+      
+      <!-- Top Navigation -->
+     <!--  <nav class="background-white background-primary-hightlight">
+        <div class="line">
+          <div class="s-12 l-2">
+            <a href="index.html" class="logo"><img src={% static 'img/wed.jpge' %} alt=""></a>
+          </div>
+          <div class="top-nav s-12 l-10">
+            <p class="nav-text"></p>
+            <ul class="right chevron">
+           
+              <li><a href={% url 'login' %}>Login</a></li>
+              <li><a href={% url 'register' %}>Register</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </header> -->
+    <!--  <header class="section background-primary text-center">
+            <h1 class="text-white margin-bottom-0 text-size-50 text-thin text-line-height-1">SIGN UP</h1>
+        </header>
+        <section class="bgwhite p-t-60 p-b-25">
+  <div class="pos-relative">
+    <div class="flex-c-m size22 bg0 s-text21 ab-b-l op-0-9">
+    </div>
+  </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-lg-9 p-b-80">
+          <div class="p-r-50 p-r-0-lg"> -->
+            
+            <!-- Leave a comment -->
+           
+            <br><br><h1  style="font-size: 40px;text-align: center; color: black;">Register Here..</h1> 
+            <div class="container" align="center">
+            <form class="leave-comment" action="." method="post" enctype="multipart/form-data">
+
+            {% csrf_token%}
+             
+              <br>  
+              <div class="bo12 of-hidden size19 m-b-30">
+               User Name :<input class="sizefull s-text7 p-l-18 p-r-18" placeholder="User Name" {{form1.username}}
+              </div><br>
+
+
+              
+              <div class="bo12 of-hidden size19 m-b-20">
+                First Name :<input class="sizefull s-text7 p-l-18 p-r-18" placeholder="First Name" {{form1.first_name}}
+              </div> <br>
+
+            
+              <div class="bo12 of-hidden size19 m-b-20">
+                  Last Name : <input class="sizefull s-text7 p-l-18 p-r-18" placeholder="Last Name" {{form1.last_name}}
+              </div><br> 
+
+
+              
+              <div class="bo12 of-hidden size19 m-b-20">
+               Email Address : <input class="sizefull s-text7 p-l-18 p-r-18" placeholder="email address" {{form1.email}}
+              </div> <br>
+
+              
+              <div class="bo12 of-hidden size19 m-b-20">
+               Password : <input class="sizefull s-text7 p-l-18 p-r-18" placeholder="Password" {{form1.password1}}
+              </div> <br>
+
+
+              
+              <div class="bo12 of-hidden size19 m-b-20">
+               Re-Enter Password : <input class="sizefull s-text7 p-l-18 p-r-18" placeholder="Re-enter The Password" {{form1.password2}}
+              </div> <br>
+
+             
+              <div>
+                 Address :<textarea class="sizefull s-text7 p-l-18 p-r-18" placeholder="Current Address" {{form2.address}}
+                </textarea><br>
+              </div>
+              
+
+             <br>
+              <div class="bo12 of-hidden size19 m-b-20">
+                Phone Number : <input class="sizefull s-text7 p-l-18 p-r-18" placeholder="Phone Number" maxlength="10"  {{form2.phonenumber}}
+              </div> <br>
+              <div class="bo12 of-hidden size19 m-b-20">
+                district: <input class="sizefull s-text7 p-l-18 p-r-18" placeholder="Phone Number" maxlength="10"  {{form2.district}}
+              </div> <br>
+
+
+
+
+             <!--  Date Of Birth
+              <div class="bo12 of-hidden size19 m-b-20">
+                {{form2.dob}}
+              </div>  -->
+
+
+              
+              <div class="bo12 of-hidden size19 m-b-20">
+               Pincode : <input class="sizefull s-text7 p-l-18 p-r-18" placeholder="Pincode" maxlength="6"   {{form2.zipcode}}
+              </div> <br>
+
+
+
+              
+              <div class="bo12 of-hidden size19 m-b-20">
+               Profile Image : {{form2.profilepic}}
+              </div> <br>
+              <div class="w-size24">
+
+
+
+                
+                <button class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4"><a href={% static url 'login' %}>
+                  REGISTER
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div></div>
+  </section>
+
+
+
+     
+   </body>
+   <style type="text/css">
+   body{
+    background-image:url("{% static 'img/wed5.JPG' %}");
+    background-size:cover;
+    color:black;
+    font-weight: bold;
+    
+  }
+
+ 
+  </style>
+</html>
